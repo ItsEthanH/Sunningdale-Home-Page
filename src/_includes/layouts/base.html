@@ -39,21 +39,22 @@
 
         <!-- Sitewide Stylesheets and Scripts -->
         <link rel="stylesheet" href="/assets/css/root.css">
+        <link rel="stylesheet" href="/assets/css/dark.css">
         <script defer src="/assets/js/nav.js"></script>
 
         {% block head %}{% endblock %}
 
         <title>{{ title }}</title>
     </head>
-    <body>
+    <body class="dark-mode">
         <!--Screen reader skip main nav-->
         <a class="skip" aria-label="skip to main content" href="#main" tabindex="1">Click To Skip To Main Content</a>
 
-        {% include "components/header.html" %}
+        {# {% include "components/header.html" %} #}
         <main id="main">
             {% block body %}{% endblock %}
         </main>
-        {% include "components/footer.html" %}
+        {# {% include "components/footer.html" %} #}
 
     </body>
 </html>
