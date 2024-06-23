@@ -14,337 +14,394 @@ eleventyNavigation:
 {% block head %}
     <link rel="stylesheet" href="/assets/css/local.css"/>
     <link rel="stylesheet" href="/assets/css/critical.css"/>
-
-    <!-- Script for Netlify Identity -->
-    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    <script defer>
-        if (window.netlifyIdentity) {
-            window
-                .netlifyIdentity
-                .on('init', (user) => {
-                    if (!user) {
-                        window
-                            .netlifyIdentity
-                            .on('login', () => {
-                                document.location.href = '/admin/';
-                            });
-                    }
-                });
-        }
-    </script>
 {% endblock %}
 
 {% block body %}
-
-    <!-- ============================================ -->
-    <!--                    Hero                      -->
-    <!-- ============================================ -->
-
-    <section id="hero">
+    <section id="hero-1617">
         <div class="cs-container">
-            <div class="cs-flex-group">
-                <span class="cs-topper">mountain hiking society</span>
-                <h1 class="cs-title">Explore the World with Exciting People</h1>
-                <p class="cs-text">
-                    Tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius. Nibh tortor id aliquet lectus proin nibh condimentum.
-                </p>
-                <a href="/about" class="cs-button-solid">Explore More</a>
-                <a href="/contact" class="cs-button-transparent">
-                    <img
-                    class="cs-img"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/Hero/play.svg"
-                    alt="play icon"
-                    width="17"
-                    height="17"/>
-                    Get in Touch
-                </a>
+            <div class="cs-content">
+                <span class="cs-topper aos-init aos-animate" data-aos="fade-up">Experience Londons best, right at home</span>
+                <h1 class="cs-title aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">Welcome to<br>Sunningdale Heights</h1>
+                <p class="cs-text aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">Register now to receive exclusive updates on rental unit availability and pricing. Be among the first to secure your rental and experience the exceptional lifestyle at Sunningdale Heights.</p>
+                <a class="cs-button-solid aos-init aos-animate" href="#sbs-1456" data-aos="fade-up" data-aos-delay="300">Learn More</a>
+                <div class="cs-corners" aria-hidden="true"></div>
             </div>
         </div>
-
-        <!-- Background Image -->
-        <picture class="cs-picture">
-            <source media="(max-width: 600px)" srcset="/assets/images/landing-m.webp">
-            <source media="(min-width: 601px)" srcset="/assets/images/landing.jpg">
-            <img aria-hidden="true" decoding="async" src="/assets/images/landing.jpg" alt="new home" width="2500" height="1667" loading="eager">
-        </picture>
+        <picture class="cs-background"><source media="(max-width: 600px)" srcset="/assets/images/hero.jpg"><source media="(min-width: 601px)" srcset="/assets/images/hero.jpg"><img alt="meeting" decoding="async" height="1200" src="/assets/images/hero.jpg" width="1920" aria-hidden="true" loading="lazy"></picture>
     </section>
-
-    <!-- ============================================ -->
-    <!--                  Services                    -->
-    <!-- ============================================ -->
-
-    <section id="services" class="services">
-        <!-- Get Icons From flaticon.com -->
-        <div class="card">
-            <picture>
-                <img
-                aria-hidden="true"
-                decoding="async"
-                src="/assets/svgs/service1.svg"
-                alt="appliance"
-                width="48"
-                height="48"/>
-            </picture>
-            <h2>Service 1</h2>
-            <p>Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences.</p>
-        </div>
-        <div class="card">
-            <picture>
-                <img
-                aria-hidden="true"
-                decoding="async"
-                src="/assets/svgs/service2.svg"
-                alt="appliance"
-                width="48"
-                height="48"/>
-            </picture>
-            <h2>Service 2</h2>
-            <p>Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences.</p>
-        </div>
-        <div class="card">
-            <picture>
-                <img
-                aria-hidden="true"
-                decoding="async"
-                src="/assets/svgs/service3.svg"
-                alt="appliance"
-                width="48"
-                height="48"/>
-            </picture>
-            <h2>Service 3</h2>
-            <p>Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences.</p>
-        </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!--                 Side By Side                 -->
-    <!-- ============================================ -->
-
-    <section id="sbs">
+    <style>
+        #sbs-1456 .cs-logo-group {
+            margin: 2rem 0;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 1rem;
+        }
+        #sbs-1456 .cs-logo-image {
+            width: 40%;
+            max-width: 12.5rem;
+            height: auto;
+            display: block;
+        }
+    </style>
+    <section id="sbs-1456">
         <div class="cs-container">
-            <!-- Left Image Section -->
-            <div class="cs-left">
-                <picture class="cs-picture cs-picture1">
-                    <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="cabinets" loading="lazy" width="400" height="563">
-                </picture>
-                <picture class="cs-picture cs-picture2">
-                    <source media="(max-width: 600px)" srcset="/assets/images/construction-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/construction.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/construction.jpg" alt="house" loading="lazy" width="400" height="563">
-                </picture>
-            </div>
-            <!-- Right Content Section-->
-            <div class="cs-right">
-                <span class="cs-topper">About Us</span>
-                <h2 class="cs-title">About Company Title</h2>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <div class="cs-flex-group">
-                    <p class="cs-flex-p">
-                        In consequat tincidunt turpis sit amet imperdiet. Praesent Classei consequat tincidunt turpis sit amet imperdiet for mind.
-                    </p>
-                    <span class="cs-name">Justin Time</span>
-                    <span class="cs-job">CEO-Founder</span>
-                    <img 
-                    class="cs-quote-icon"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg"
-                    alt="gavel"
-                    width="136"
-                    height="77"/>
-                </div>
-                <a href="/about" class="cs-button-solid">More About Us</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!--            Extra Content To Rank             -->
-    <!-- ============================================ -->
-
-    <section id="sbs-r">
-        <div class="cs-container">
-            <!-- Left Image Section -->
-            <div class="cs-left">
-                <picture class="cs-picture cs-picture1">
-                    <source media="(max-width: 600px)" srcset="/assets/images/construction-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/construction.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/construction.jpg" alt="house" loading="lazy" width="400" height="560">
-                </picture>
-                <picture class="cs-picture cs-picture2">
-                    <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="cabinets" loading="lazy" width="400" height="560">
-                </picture>
-            </div>
-            <!-- Right Content Section-->
-            <div class="cs-right">
-                <span class="cs-topper">SEO Ranking</span>
-                <h2 class="cs-title">Talk about a main service keyword</h2>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <p class="cs-text">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non tenetur, iure nihil ipsam qui atque commodi id voluptatem nesciunt, quis animi fuga cum doloribus! Eaque laboriosam, unde consectetur iure asperiores ullam. Consequuntur debitis a voluptatibus vitae optio autem explicabo quia neque est quas, in placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus modi laudantium voluptatibus rem libero error minus quia eligendi sapiente eos.
-                </p>
-                <a href="/blog" class="cs-button-solid">Read our Blog</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!--                   Gallery                    -->
-    <!-- ============================================ -->
-
-    <section id="gallery">
-        <div class="cs-container">
-            <span class="cs-topper">Our Portfolio</span>
-            <h2 class="cs-title">Et orci volutpat, back up generator installations</h2>
             <div class="cs-image-group">
-                <!-- Row 1-->
-                <div class="cs-row cs-row-1">
-                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-                    <picture class="cs-picture cs-picture1">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port1-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port1.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port1.jpg" alt="new hallway" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture2">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port4-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port4.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port4.jpg" alt="new home construction" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture3">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port7-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port7.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port7.jpg" alt="building a new wall" loading="lazy" width="400" height="560">
-                    </picture>
-                </div>
-                <!-- Row 2 -->
-                <div class="cs-row cs-row-2">
-                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-                    <picture class="cs-picture cs-picture1">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port2-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port2.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port2.jpg" alt="new kitchen" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture2">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port5-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port5.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port5.jpg" alt="apartment addition" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture3">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port8-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port8.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port8.jpg" alt="kew kitchen cabinets" loading="lazy" width="400" height="560">
-                    </picture>
-                </div>
-                <!-- Row 3 -->
-                <div class="cs-row cs-row-3">
-                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-                    <picture class="cs-picture cs-picture1">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port3-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port3.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port3.jpg" alt="new kitchen" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture2">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port6-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port6.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port6.jpg" alt="apartment addition" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture3">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port9-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port9.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port9.jpg" alt="kew kitchen cabinets" loading="lazy" width="400" height="560">
-                    </picture>
-
+                <picture class="cs-picture cs-picture1 aos-init" data-aos="fade-right"><source media="(max-width: 600px)" srcset="/assets/images/Market place Option 1 brick at grade (3) (4).jpg"><source media="(min-width: 601px)" srcset="/assets/images/Market place Option 1 brick at grade (3) (4).jpg"><img alt="turbine" decoding="async" height="729" src="/assets/images/Market place Option 1 brick at grade (3) (4).jpg" width="500" aria-hidden="true" loading="lazy"></picture>
+                <picture class="cs-picture cs-picture2 aos-init" data-aos="fade-left"><source media="(max-width: 600px)" srcset="/assets/images/condo.jpg"><source media="(min-width: 601px)" srcset="/assets/images/condo.jpg"><img alt="windmill" decoding="async" height="460" src="/assets/images/condo.jpg" width="378" aria-hidden="true" loading="lazy"></picture>
+            </div>
+            <div class="cs-content">
+                <span class="cs-topper aos-init" data-aos="fade-up" data-aos-delay="100">Our Properties</span>
+                <h2 class="cs-title aos-init" data-aos="fade-up" data-aos-delay="200">Sunningdale Heights - Phase I</h2>
+                <p class="cs-text aos-init" data-aos="fade-up" data-aos-delay="300">Discover a lifestyle redefined at Sunningdale Heights. Sunningdale Heights is meticulously designed to offer an unmatched combination of comfort and convenience within a vibrant community. Discover a lifestyle redefined at Sunningdale Heights. Situated in the heart of London, Ontario, our property embodies contemporary and thoughtful&nbsp;design.</p>
+                <p class="cs-text aos-init" data-aos="fade-up" data-aos-delay="400">Sunningdale Heights feature spacious living areas and an attention to detail that sets a new standard for living. Sunningdale Heights is more than just a development; it's a statement of sophistication.</p>
+                <p class="cs-text aos-init" data-aos="fade-up" data-aos-delay="500">Indulge in an unparalleled living experience - register today for a glimpse of what awaits you.</p>
+                <div class="cs-logo-group"><br>
+                    <h3 class="cs-h3">Development and Construction By:</h3><img alt="aura logo" decoding="async" height="100" src="/assets/images/aura.png" class="cs-logo-image">
+                    <img alt="aura logo" decoding="async" height="100" src="/assets/images/MarshallZehr-Logo-Horizontal (1).png" class="cs-logo-image"></div>
+                <a class="cs-button-solid aos-init" href="https://sunningdaleheights.com/contact" data-aos="fade-up" data-aos-delay="600">Register Now</a>
+            </div>
+        </div>
+    </section>
+    <section id="amenities">
+        <div class="cs-container">
+            <div class="cs-image-group">
+                <picture class="cs-picture cs-picture1 aos-init" data-aos="fade-left"><source media="(max-width: 600px)" srcset="/assets/images/conference_room.png"><source media="(min-width: 601px)" srcset="/assets/images/conference_room.png"><img alt="turbine" decoding="async" height="729" src="/assets/images/conference_room.png" width="500" aria-hidden="true" loading="lazy"></picture>
+                <picture class="cs-picture cs-picture2 aos-init" data-aos="fade-right"><source media="(max-width: 600px)" srcset="/assets/images/gym.jpg"><source media="(min-width: 601px)" srcset="/assets/images/gym.jpg"><img alt="windmill" decoding="async" height="460" src="/assets/images/gym.jpg" width="378" aria-hidden="true" loading="lazy"></picture>
+            </div>
+            <div class="cs-content">
+                <span class="cs-topper aos-init" data-aos="fade-up" data-aos-delay="100">Why Sunningdale</span>
+                <h2 class="cs-title aos-init" data-aos="fade-up" data-aos-delay="200">Enjoy Added Benefits In Sunningdale</h2>
+                <p class="cs-text aos-init" data-aos="fade-up" data-aos-delay="300">At Sunningdale Heights, we offer residents an array of building amenities, including:</p>
+                <ul class="cs-bullet-list aos-init" data-aos="fade-up" data-aos-delay="400">
+                    <li class="cs-li">
+                        <h3 class="cs-h3"><img alt="squares" decoding="async" height="18" src="/assets/images/bullet.svg" width="17" aria-hidden="true" loading="lazy" class="cs-icon"> Party Room:</h3>
+                        <p class="cs-item-text">Celebrate life's special moments with friends and family in our well-appointed party room, perfect for gatherings and events.</p>
+                    </li>
+                    <li class="cs-li">
+                        <h3 class="cs-h3"><img alt="squares" decoding="async" height="18" src="/assets/images/bullet.svg" width="17" aria-hidden="true" loading="lazy" class="cs-icon"> Two Rooftop Terraces:</h3>
+                        <p class="cs-item-text">Take in breathtaking views of London, Ontario from our two rooftop terraces. Whether you're seeking relaxation or a place to entertain, these spaces are designed for your enjoyment.</p>
+                    </li>
+                    <li class="cs-li">
+                        <h3 class="cs-h3"><img alt="squares" decoding="async" height="18" src="/assets/images/bullet.svg" width="17" aria-hidden="true" loading="lazy" class="cs-icon"> Spacious Bedrooms:</h3>
+                        <p class="cs-item-text">Rest easy in generously sized bedrooms designed for maximum comfort.</p>
+                    </li>
+                    <li class="cs-li">
+                        <h3 class="cs-h3"><img alt="squares" decoding="async" height="18" src="/assets/images/bullet.svg" width="17" aria-hidden="true" loading="lazy" class="cs-icon"> Modern Kitchens:</h3>
+                        <p class="cs-item-text">Prepare gourmet meals in our modern kitchens equipped with high-end appliances and ample counter space.</p>
+                    </li>
+                    <li class="cs-li">
+                        <h3 class="cs-h3"><img alt="squares" decoding="async" height="18" src="/assets/images/bullet.svg" width="17" aria-hidden="true" loading="lazy" class="cs-icon"> Luxurious Bathrooms:</h3>
+                        <p class="cs-item-text">Pamper yourself in elegant bathrooms with spa-like features and finishes.</p>
+                    </li>
+                </ul>
+                <a class="cs-button-solid aos-init" href="https://sunningdaleheights.com/contact" data-aos="fade-up" data-aos-delay="500">Register Now</a>
+            </div>
+        </div>
+        <picture class="cs-background"><source media="(max-width: 600px)" srcset="/assets/images/why-bg.jpg"><source media="(min-width: 601px)" srcset="/assets/images/why-bg.jpg"><img alt="turbine" decoding="async" height="568" src="/assets/images/why-bg.jpg" width="1280" loading="lazy"></picture>
+    </section>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAa-wtvfCQDK7f_3Y0rOEaD7itnh7MFy8Y&amp;callback=initMap" defer="" async=""></script>
+    <script>
+        var map;
+        function initMap() {
+            map = new google
+                .maps
+                .Map(document.getElementById("map"), {
+                    center: {
+                        lat: 43.0068428,
+                        lng: -81.2774517
+                    },
+                    zoom: 12
+                });
+            [
+                {
+                    lat: 43.0068428,
+                    lng: -81.2774517,
+                    title: "Western University"
+                }, {
+                    lat: 42.9838142,
+                    lng: -81.2512969,
+                    title: "Fanshawe College"
+                }, {
+                    lat: 43.0205035,
+                    lng: -81.2792328,
+                    title: "Masonville Place"
+                }, {
+                    lat: 42.9828131,
+                    lng: -81.2503452,
+                    title: "Garden Market"
+                }, {
+                    lat: 42.9892363,
+                    lng: -81.2484415,
+                    title: "Victoria Park"
+                }, {
+                    lat: 42.9985512,
+                    lng: -81.2638298,
+                    title: "Gibbons Park"
+                }, {
+                    lat: 42.9843909,
+                    lng: -81.2491626,
+                    title: "London Music Hall"
+                }, {
+                    lat: 42.9825817,
+                    lng: -81.2550668,
+                    title: "Museum London"
+                }, {
+                    lat: 43.0124531,
+                    lng: -81.2745418,
+                    title: "London Health Sciences"
+                }, {
+                    lat: 43.0009578,
+                    lng: -81.254751,
+                    title: "St. Joseph's Health Care London"
+                }, {
+                    lat: 43.0324836,
+                    lng: -81.3014284,
+                    title: "Sunningdale Heights",
+                    icon: "https://sunningdaleheights.com/assets/images/icon.png"
+                }
+            ].forEach(function (t) {
+                var n = {
+                        position: {
+                            lat: t.lat,
+                            lng: t.lng
+                        },
+                        map: map,
+                        title: t.title
+                    },
+                    l = (t.icon && (n.icon = {
+                        url: t.icon,
+                        scaledSize: new google
+                            .maps
+                            .Size(32, 32)
+                    }), new google.maps.Marker(n)),
+                    e = new google
+                        .maps
+                        .InfoWindow({content: t.title});
+                l.addListener("click", function () {
+                    e.open(map, l)
+                })
+            })
+        }
+    </script>
+    <section id="sbs-1640">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper aos-init" data-aos="fade-up" data-aos-delay="100">Experience the Best of London</span>
+                <h2 class="cs-title aos-init" data-aos="fade-up" data-aos-delay="200">Sunningdale Amenities in London, Ontario</h2>
+                <div class="cs-picture aos-init" data-aos="fade-up" data-aos-delay="300">
+                    <div style="height:600px;width:450px" id="map"></div>
                 </div>
             </div>
-            <a href="/projects" class="cs-button-solid">View Full Gallery</a>
+            <div class="cs-stats-group aos-init" data-aos="fade-up" data-aos-delay="400">
+                <p class="cs-text">Beyond our building amenities, you'll also have access to the following local amenities:</p>
+                <ul class="cs-bullet-list">
+                    <li class="cs-li">
+                        <h3 class="cs-h3"><img alt="squares" decoding="async" height="18" src="/assets/images/bullet.svg" width="17" aria-hidden="true" loading="lazy" class="cs-icon"> Culinary Delights:</h3>
+                        <p class="cs-item-text">Satisfy your palate with a diverse culinary scene featuring restaurants that offer a world of flavours right in your neighbourhood.</p>
+                    </li>
+                    <li class="cs-li">
+                        <h3 class="cs-h3"><img alt="squares" decoding="async" height="18" src="/assets/images/bullet.svg" width="17" aria-hidden="true" loading="lazy" class="cs-icon"> Top Schools:</h3>
+                        <p class="cs-item-text">Provide your family with quality education by enrolling in nearby renowned schools and educational institutions, such as Western University and Fanshawe College.</p>
+                    </li>
+                    <li class="cs-li">
+                        <h3 class="cs-h3"><img alt="squares" decoding="async" height="18" src="/assets/images/bullet.svg" width="17" aria-hidden="true" loading="lazy" class="cs-icon"> Shopping Paradise:</h3>
+                        <p class="cs-item-text">Fulfill your shopping desires at the city's finest retail destinations, including the bustling Masonville Place and the eclectic Covent Garden Market.</p>
+                    </li>
+                    <li class="cs-li">
+                        <h3 class="cs-h3"><img alt="squares" decoding="async" height="18" src="/assets/images/bullet.svg" width="17" aria-hidden="true" loading="lazy" class="cs-icon"> Recreation:</h3>
+                        <p class="cs-item-text">Enjoy outdoor activities at nearby parks like Victoria Park and Gibbons Park, or explore cultural events at the London Music Hall and Museum London.</p>
+                    </li>
+                    <li class="cs-li">
+                        <h3 class="cs-h3"><img alt="squares" decoding="async" height="18" src="/assets/images/bullet.svg" width="17" aria-hidden="true" loading="lazy" class="cs-icon"> Healthcare:</h3>
+                        <p class="cs-item-text">Access top-notch healthcare facilities, such as London Health Sciences and St. Joseph's Health Care London, for your peace of mind.</p>
+                    </li>
+                </ul>
+                <p class="cs-text">When you choose Sunningdale Heights, you're not just choosing a place to live; you're choosing a lifestyle enriched by the best London, Ontario has to offer. Explore all these incredible amenities when you register for updates.</p>
+            </div>
         </div>
     </section>
-
-    <!-- ============================================ -->
-    <!--                   Reviews                    -->
-    <!-- ============================================ -->
-
-    <section id="reviews">
+    <section id="sbsr-1162">
         <div class="cs-container">
-            <span class="cs-topper">Our Reviews</span>
-            <h2 class="cs-title">Words From Our Customers</h2>
-            <p class="cs-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit dolor volutpat porttitor sagittis nunc nisl. Sagittis sit pellentesque gravida viverra. Leo ut sed euismod tortor risus et. Ornare non neque, leo, ornare. Lorem ipsum dolor sit amet.
-            </p>
-            <ul class="cs-card-group">
-                <!-- Review 1 -->
-                <li class="cs-item">
-                    <img
-                    class="cs-item-img"
-                    aria-hidden="true"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile5.png"
-                    alt="profile picture"
-                    width="80"
-                    height="80"/>
-                    <p class="cs-item-p">
-                        Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor habitasse nam sed tempor. Viverra magna pharetra rhoncus, nec sed ullamcorper lectus et. Auctor velit diam fermentum consequat. Feugiat viverra massa urna, volutpat orci imperdiet eget eget.
-                    </p>
-                    <span class="cs-reviewer">
-                        Jon Doe
-                        <span class="cs-desc">Homeowner</span>
-                    </span>
-                    <img
-                    class="cs-item-stars"
-                    aria-hidden="true"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg"
-                    alt="stars"
-                    width="96"
-                    height="16"/>
-                </li>
-                <!-- Review 2 -->
-                <li class="cs-item">
-                    <img
-                    class="cs-item-img"
-                    aria-hidden="true"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile-4.png"
-                    alt="profile picture"
-                    width="80"
-                    height="80"/>
-                    <p class="cs-item-p">
-                        Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor habitasse nam sed tempor. Viverra magna pharetra rhoncus, nec sed ullamcorper lectus et. Auctor velit diam fermentum consequat. Feugiat viverra massa urna, volutpat orci imperdiet eget eget.
-                    </p>
-                    <span class="cs-reviewer">
-                        Jane Doe
-                        <span class="cs-desc">Homeowner</span>
-                    </span>
-                    <img
-                    class="cs-item-stars"
-                    aria-hidden="true"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg"
-                    alt="stars"
-                    width="96"
-                    height="16"/>
-                </li>
-            </ul>
-            <a aria-label="read more reviews" href="/reviews" class="cs-button-solid">Our Reviews</a>
+            <div class="cs-image-group">
+                <picture class="cs-picture cs-picture1 aos-init" data-aos="fade-right"><source media="(max-width: 600px)" srcset="/assets/images/Market place Option 1 brick at grade (3) (3).jpg"><source media="(min-width: 601px)" srcset="/assets/images/Market place Option 1 brick at grade (3) (3).jpg"><img alt="appliance" decoding="async" height="390" src="/assets/images/Market place Option 1 brick at grade (3) (3).jpg" width="630" loading="lazy"></picture>
+                <picture class="cs-picture cs-picture2 aos-init" data-aos="fade-left" data-aos-delay="400"><source media="(max-width: 600px)" srcset="/assets/images/neighborhood2.jpg"><source media="(min-width: 601px)" srcset="/assets/images/neighborhood2.jpg"><img alt="appliance" decoding="async" height="300" src="/assets/images/neighborhood2.jpg" width="461" loading="lazy"></picture>
+                <div class="cs-box aos-init" data-aos="fade-up" data-aos-delay="100">
+                    <span class="cs-number">300+</span>
+                    <span class="cs-desc">Units Available</span></div>
+            </div>
+            <div class="cs-content">
+                <span class="cs-topper aos-init" data-aos="fade-up">Life in London, Ontario</span>
+                <h2 class="cs-title aos-init" data-aos="fade-up" data-aos-delay="100">Neighbourhood Information:</h2>
+                <p class="cs-text aos-init" data-aos="fade-up" data-aos-delay="200">London, Ontario, seamlessly combines urban living with natural beauty. From lush parks to an array of cultural events, this city has something to offer everyone.</p>
+                <p class="cs-text aos-init" data-aos="fade-up" data-aos-delay="300">Our neighbourhood guide will introduce you to:</p>
+                <ul class="cs-bullet-list aos-init" data-aos="fade-up" data-aos-delay="400">
+                    <li class="cs-li">
+                        <h3 class="cs-h3"><img alt="squares" decoding="async" height="18" src="/assets/images/bullet.svg" width="17" aria-hidden="true" loading="lazy" class="cs-icon"> Recreation:</h3>
+                        <p class="cs-item-text">Discover parks, trails, and recreational activities that allow you to embrace outdoors right at your doorstep.</p>
+                    </li>
+                    <li class="cs-li">
+                        <h3 class="cs-h3"><img alt="squares" decoding="async" height="18" src="/assets/images/bullet.svg" width="17" aria-hidden="true" loading="lazy" class="cs-icon"> Cultural Riches:</h3>
+                        <p class="cs-item-text">Immerse yourself in the city's rich history and cultural scene, with museums, galleries, and events that inspire and entertain.</p>
+                    </li>
+                    <li class="cs-li">
+                        <h3 class="cs-h3"><img alt="squares" decoding="async" height="18" src="/assets/images/bullet.svg" width="17" aria-hidden="true" loading="lazy" class="cs-icon"> Economic Hub:</h3>
+                        <p class="cs-item-text">Benefit from a thriving business environment with career opportunities in various sectors.</p>
+                    </li>
+                </ul>
+                <a class="cs-button-solid aos-init" href="https://sunningdaleheights.com/contact" data-aos="fade-up" data-aos-delay="500">Register Now</a>
+            </div>
         </div>
     </section>
-
-    {% include 'components/cta.html' %}
+    <section id="contact-1150">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Inquire</span>
+                <h2 class="cs-title">Contact Us For More Details</h2>
+            </div>
+            <div class="cs-contact-group">
+                <picture class="cs-picture"><source media="(max-width: 600px)" srcset="/assets/images/Market place Option 1 brick at grade (2).jpg"><source media="(min-width: 601px)" srcset="/assets/images/Market place Option 1 brick at grade (2).jpg"><img alt="people" decoding="async" height="300" src="/assets/images/Market place Option 1 brick at grade (2).jpg" width="630" loading="lazy"></picture>
+                <p class="cs-text">Don't miss the chance to become part of the Sunningdale Heights community. Register now for exclusive updates and pricing information. It's time to come home to a new era of living in London, Ontario, where every amenity, including our building amenities, is within your reach.</p>
+                <p class="cs-contact-text">Have questions or need more information? Our dedicated team is here to assist you:</p>
+                <ul class="cs-ul">
+                    <li class="cs-li">
+                        <picture class="cs-icon-wrapper"><img alt="phone icon" decoding="async" height="40" src="/assets/images/mech-phone.svg" width="40" aria-hidden="true" class="cs-icon"></picture>
+                        <div class="cs-flex-group">
+                            <span class="cs-header">Phone</span>
+                            <a class="cs-link" href="tel:905-761-0077">(905) 761-0077</a>
+                        </div>
+                    </li>
+                    <li class="cs-li">
+                        <picture class="cs-icon-wrapper"><img alt="address icon" decoding="async" height="40" src="/assets/images/mail.svg" width="40" aria-hidden="true" class="cs-icon"></picture>
+                        <div class="cs-flex-group">
+                            <span class="cs-header">Email</span>
+                            <a class="cs-link" href="mailto:info@auragoc.com">info@auragoc.com</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <style>
+                form .cs-content {
+                    text-align: left!important;
+                }
+                form h2.cs-title {
+                    font-size: 16px;
+                }
+                #contact-1150 .cs-label {
+                    padding-top: 10px;
+                }
+                .radio-buttons label {
+                    display: flex;
+                    margin-right: 20px;
+                    align-items: center;
+                }
+                .radio-buttons label input {
+                    height: 2rem;
+                    margin-left: 20px;
+                    align-items: center;
+                    display: flex;
+                }
+            </style>
+            <form class="cs-form" id="cs-form-1150" method="post" name="Contact Form">
+                <div class="cs-content">
+                    <h2 class="cs-title">Personal Information</h2>
+                </div>
+                <label class="cs-label">Full Name <input id="name-1150" name="name" type="text" class="cs-input" required="" placeholder="Name"></label>
+                <label class="cs-label cs-email">Email Address <input id="email-1150" name="email" type="email" class="cs-input" required="" placeholder="Email"></label>
+                <label class="cs-label cs-phone">Phone Number <input id="phone-1150" name="phone" type="number" class="cs-input" required="" placeholder="Phone"></label>
+                <label class="cs-label">Preferred Contact Method<div class="radio-buttons" style="display:flex">
+                        <label for="phoneYes-1150" style="margin-right:20px">Phone <input id="phoneYes-1150" name="contact-method" type="radio" class="cs-input" value="Phone"></label>
+                        <label for="emailYes-1150">Email <input id="emailYes-1150" name="contact-method" type="radio" class="cs-input" value="Email"></label>
+                    </div>
+                </label>
+                <div class="cs-content">
+                    <h2 class="cs-title" style="margin-top:20px">Rental Preferences</h2>
+                </div>
+                <label class="cs-label">Desired Move-in Date <input id="date-1150" name="date" type="date" class="cs-input" required=""></label>
+                <label class="cs-label">Suite Size Preference<div class="cs-input-group"><input id="studio-1150" name="unitSize[]" type="checkbox" value="Studio">
+                        <label for="studio-1150">Studio</label>
+                        <input id="1bed-1150" name="unitSize[]" type="checkbox" value="1 Bedroom">
+                        <label for="1bed-1150">1 Bedroom</label>
+                        <input id="2beds-1150" name="unitSize[]" type="checkbox" value="2 Bedrooms">
+                        <label for="2beds-1150">2 Bedrooms</label>
+                        <input id="3beds-1150" name="unitSize[]" type="checkbox" value="3 Bedrooms">
+                        <label for="3beds-1150">3 Bedrooms</label>
+                        <input id="other-1150" name="unitSize[]" type="checkbox" value="Other">
+                        <label for="other-1150">Other</label>
+                    </div>
+                </label>
+                <label class="cs-label">Budget <input id="budget-1150" name="budget" type="number" class="cs-input" required=""></label>
+                <div class="cs-content">
+                    <h2 class="cs-title" style="margin-top:20px">Lifestyle and Needs</h2>
+                </div>
+                <label class="cs-label">Number of Occupants <input id="occupants-1150" name="occupants" type="number" class="cs-input" required="" min="1"></label>
+                <label class="cs-label">Number of Children <input id="children-1150" name="children" type="number" class="cs-input" required="" min="0"></label>
+                <label class="cs-label">Are you bringing any pets?<div class="radio-buttons" style="display:flex">
+                        <label for="petsYes-1150" style="margin-right:20px">Yes <input id="petsYes-1150" name="pets" type="radio" class="cs-input" value="Yes"></label>
+                        <label for="petsNo-1150">No <input id="petsNo-1150" name="pets" type="radio" class="cs-input" value="No"></label>
+                    </div>
+                </label>
+                <label class="cs-label">Where do you currently live? <select class="cs-input" id="current-1150" name="current">
+                        <option value="" disabled="" selected="">Select an option</option>
+                        <option value="apartment">Apartment</option>
+                        <option value="house">House</option>
+                        <option value="first-time-renter">First Time Renter</option>
+                    </select>
+                </label>
+                <label class="cs-label">What city do you currently live in? <input id="city-1150" name="city" type="text" class="cs-input" required=""></label>
+                <label class="cs-label">Special Requirements or Preferences <textarea class="cs-input" id="special-1150" name="special"></textarea>
+                </label>
+                <div class="cs-content">
+                    <h2 class="cs-title" style="margin-top:20px">Additional Information</h2>
+                </div>
+                <label class="cs-label">How did you hear about us? <select class="cs-input" id="referral-1150" name="referral">
+                        <option value="" disabled="" selected="">Select an option</option>
+                        <option value="search-engine">Search Engine</option>
+                        <option value="social-media">Social Media</option>
+                        <option value="referral">Referral</option>
+                        <option value="advertisement">Advertisement</option>
+                        <option value="other">Other</option>
+                    </select>
+                </label>
+                <label class="cs-label">Any Questions or Comments? <textarea class="cs-input" id="comments-1150" name="comments"></textarea>
+                </label>
+                <style>
+                    #contact-1150 .cs-form {
+                        flex-direction: column;
+                    }
+                    .form-errors {
+                        color: red;
+                        margin-bottom: 15px;
+                    }
+                    .form-errors ul {
+                        list-style: none;
+                        padding: 0;
+                        color: red;
+                        text-align: center;
+                    }
+                    .form-errors li {
+                        margin-bottom: 5px;
+                        color: red;
+                    }
+                    .form-success {
+                        color: green;
+                        margin-bottom: 15px;
+                    }
+                </style>
+                <div class="form-errors" id="formErrors"></div>
+                <div class="form-success" style="display:none" id="formSuccess"></div>
+                <button class="cs-button-solid cs-submit" type="submit">Register Now</button>
+            </form>
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 50,
+            delay: 0,
+            duration: 1e3,
+            easing: "ease",
+            mirror: !1
+        })
+    </script>
 {% endblock %}
