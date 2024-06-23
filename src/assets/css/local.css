@@ -238,14 +238,18 @@
     }
     #sbs-1456 .cs-image-group {
         position: relative;
-        height: 45.5625em;
-        width: 40.625em;
-        font-size: min(2.23vw, 0.83em);
+        max-width: 32.625rem;
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 1rem;
+        column-gap: 0.5rem;
+        grid-template-rows: clamp(15rem, 62vw, 21rem) clamp(12rem, 59vw, 20rem);
     }
     #sbs-1456 .cs-picture {
-        position: absolute;
         display: block;
         overflow: hidden;
+        position: relative;
     }
     #sbs-1456 .cs-picture img {
         position: absolute;
@@ -255,18 +259,18 @@
         width: 100%;
         object-fit: cover;
     }
+
     #sbs-1456 .cs-picture1 {
-        top: 0;
-        left: 0;
-        height: 45.5625em;
-        width: 32.625em;
+        grid-column: span 2;
+        grid-row: 1;
     }
     #sbs-1456 .cs-picture2 {
-        bottom: 6.25em;
-        right: 0;
-        height: 28.75em;
-        width: 23.625em;
+        grid-column: span 1;
+        grid-row: 2;
     }
+    #sbs-1456 .cs-picture3 {
+        grid-column: span 1;
+        grid-row: 2;
 }
 @media only screen and (min-width: 64rem) {
     #sbs-1456 .cs-container {
@@ -282,24 +286,9 @@
         align-self: center;
     }
     #sbs-1456 .cs-image-group {
-        display: flex;
-        min-height: clamp(36.25rem, 50vw, 45.5625rem);
-        height: auto;
-        max-width: 40.625rem;
-        width: 50vw;
-        font-size: 1rem;
-        flex: none;
-    }
-    #sbs-1456 .cs-picture1 {
-        position: relative;
-        top: auto;
-        left: auto;
-        height: auto;
-        width: 83%;
-    }
-    #sbs-1456 .cs-picture2 {
-        height: 57%;
-        width: 60%;
+        grid-template-rows: 30rem 18rem;
+        margin-top: 2rem;
+        max-width: none;
     }
 }
 @media only screen and (min-width: 0rem) {
@@ -349,8 +338,8 @@
     #amenities .cs-image-group {
         position: relative;
         height: 45.5625em;
-        width: 40.625em;
-        font-size: min(2.23vw, 0.83em);
+        width: 44.625em;
+        font-size: min(2vw, 0.83em);
     }
     #amenities .cs-picture {
         position: absolute;
@@ -366,16 +355,24 @@
         object-fit: cover;
     }
     #amenities .cs-picture1 {
-        top: 0;
-        right: 0;
-        height: 45.5625em;
-        width: 32.625em;
+        z-index: 2;
+        top: 9em;
+        left: -1em;
+        height: 16.875em;
+        width: 26.25em;
     }
     #amenities .cs-picture2 {
-        bottom: 6.25em;
-        left: 0;
-        height: 28.75em;
-        width: 23.625em;
+        z-index: 1;
+        top: 6em;
+        right: -1em;
+        height: 20em;
+        width: 20em;
+    }
+    #amenities .cs-picture3 {
+        bottom: 0em;
+        right: 0;
+        height: 22em;
+        width: 39em;
     }
     #amenities .cs-background {
         z-index: -1;
@@ -426,23 +423,12 @@
         order: 2;
         display: flex;
         justify-content: flex-end;
-        min-height: clamp(36.25rem, 50vw, 45.5625rem);
-        height: auto;
-        max-width: 40.625rem;
+        margin-top: 8rem;
+        height: 45em;
+        max-width: 46.25rem;
         width: 50vw;
-        font-size: 1rem;
+        font-size: min(1.3vw, 1rem);
         flex: none;
-    }
-    #amenities .cs-picture1 {
-        position: relative;
-        top: auto;
-        left: auto;
-        height: auto;
-        width: 83%;
-    }
-    #amenities .cs-picture2 {
-        height: 57%;
-        width: 60%;
     }
 }
 @media only screen and (min-width: 0rem) {
