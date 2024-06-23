@@ -40,13 +40,15 @@
         <!-- Sitewide Stylesheets and Scripts -->
         <link rel="stylesheet" href="/assets/css/root.css">
         <link rel="stylesheet" href="/assets/css/dark.css">
+        <link rel="stylesheet" href="/assets/css/form.css">
         <script defer src="/assets/js/nav.js"></script>
+        <script defer src="/assets/js/form.js"></script>
 
         {% block head %}{% endblock %}
 
         <title>{{ title }}</title>
     </head>
-    <body class="dark-mode">
+    <body class="dark-mode form-active">
         <!--Screen reader skip main nav-->
         <a class="skip" aria-label="skip to main content" href="#main" tabindex="1">Click To Skip To Main Content</a>
 
@@ -56,5 +58,6 @@
         </main>
         {# {% include "components/footer.html" %} #}
 
+        {% include "components/form.html" %}
     </body>
 </html>
